@@ -3,7 +3,7 @@ import time
 
 buzzer_pin = 4
 led_pin = 5
-button_pin = 6
+touch_pin = 6
 
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(buzzer_pin, GPIO.OUT)
