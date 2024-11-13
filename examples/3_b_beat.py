@@ -2,12 +2,13 @@ import RPi.GPIO as GPIO
 import time
 
 buzzer_pin = 4
-touch_pin = 5
-led_pin = 6
+led_pin = 5
+button_pin = 6
 
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(buzzer_pin, GPIO.OUT)
 GPIO.setup(touch_pin, GPIO.IN)
+GPIO.setup(led_pin, GPIO.OUT)
 
 # Define rhythm pattern (in seconds)
 # 0.25 = sixteenth note, 0.5 = eighth note, 1 = quarter note
