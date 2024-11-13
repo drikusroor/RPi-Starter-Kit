@@ -23,8 +23,10 @@ def play_rhythm():
     """Play one cycle of the rhythm pattern"""
     for duration in rhythm_pattern:
         GPIO.output(buzzer_pin, GPIO.HIGH)
+        GPIO.output(led_pin, GPIO.HIGH)
         time.sleep(duration * 0.6)  # On time
         GPIO.output(buzzer_pin, GPIO.LOW)
+        GPIO.output(led_pin, GPIO.LOW)
         time.sleep(duration * 0.4)  # Off time (creates articulation)
 
 try:
@@ -34,6 +36,7 @@ try:
             play_rhythm()
         else:
             GPIO.output(buzzer_pin, GPIO.LOW)
+            GPIO.output(led_pin, GPIO.LOW)
             time.sleep(0.1)  # Small delay to prevent CPU overload
             
 except KeyboardInterrupt:
