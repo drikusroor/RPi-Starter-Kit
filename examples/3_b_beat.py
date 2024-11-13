@@ -1,8 +1,9 @@
 import RPi.GPIO as GPIO
 import time
 
+buzzer_pin = 4
 touch_pin = 5
-buzzer_pin = 6
+led_pin = 6
 
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(buzzer_pin, GPIO.OUT)
