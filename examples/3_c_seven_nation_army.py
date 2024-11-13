@@ -14,13 +14,13 @@ GPIO.setup(led_pin, GPIO.OUT)
 # Each note is represented by its duration in seconds
 # Quarter note = 0.5 seconds (120 BPM)
 rhythm_pattern = [
-    0.5,    # E (quarter note)
-    0.5,    # E (quarter note)
-    0.25,   # G (eighth note)
-    0.25,   # E (eighth note)
-    0.5,    # D (quarter note)
-    0.5,    # C (quarter note)
-    1.0     # B (half note)
+    0.75,    # E (quarter note)
+    0.25,    # E (quarter note)
+    0.33,    # G (eighth note)
+    0.33,    # E (eighth note)
+    0.33,    # D (quarter note)
+    0.5,     # C (quarter note)
+    0.5      # B (half note)
 ]
 
 def play_rhythm():
